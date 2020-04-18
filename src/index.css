@@ -12,7 +12,36 @@ code {
     monospace;
 }
 
+h3 {
+  font-family: 'Manrope', sans-serif;
+}
+
+p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 130%;
+  font-weight: 300;
+}
+
 .manrope {
   font-family: 'Manrope', sans-serif;
 }
 
+.jumboBig{
+  transition: height 0.5s ease;
+  height: 300px;
+}
+
+.jumboSmall{
+  transition: height 0.5s ease;
+  height: 100px;
+}
+
+.nameVisible {
+  transition: opacity 0.25s ease;
+  opacity: 1.0;
+}
+
+.nameHidden {
+  transition: opacity 0.25s ease;
+  opacity: 0.0;
+}

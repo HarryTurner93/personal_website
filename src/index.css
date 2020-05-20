@@ -14,12 +14,26 @@ code {
 
 h3 {
   font-family: 'Manrope', sans-serif;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 p {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 130%;
-  font-weight: 300;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 25pt;
+}
+
+h4 {
+  font-family: 'Lora', serif;
+  font-size: 130%;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 25pt;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .manrope {

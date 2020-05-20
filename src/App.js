@@ -16,6 +16,7 @@ import About from './About.js';
 import Books from './Books.js';
 import Knowledge from './Knowledge.js';
 import Blog from './Blog.js';
+import Projects from "./Projects";
 
 class App extends React.Component {
 
@@ -35,16 +36,17 @@ class App extends React.Component {
                                     <NavItem href="/knowledge"><Nav.Link as={Link} to="/knowledge"  className="manrope"  style={{paddingLeft: '20px', paddingRight: '20px', color: '#DDDDDD', fontSize: '130%', fontWeight: '700'}}>Machine Learning</Nav.Link></NavItem>
                                     <NavItem href="/books"><Nav.Link as={Link} to="/books"  className="manrope"  style={{paddingLeft: '20px', paddingRight: '20px', color: '#DDDDDD', fontSize: '130%', fontWeight: '700'}}>Books</Nav.Link></NavItem>
                                     <NavItem href="/blog"><Nav.Link as={Link} to="/blog"  className="manrope"  style={{paddingLeft: '20px', paddingRight: '20px', color: '#DDDDDD', fontSize: '130%', fontWeight: '700'}}>Blog Posts</Nav.Link></NavItem>
+                                    <NavItem href="/projects"><Nav.Link as={Link} to="/projects"  className="manrope"  style={{paddingLeft: '20px', paddingRight: '20px', color: '#DDDDDD', fontSize: '130%', fontWeight: '700'}}>Projects</Nav.Link></NavItem>
                                 </Nav>
                             </Navbar.Collapse>
                         </Navbar>
                         <div className={nameOpacity}>
                             <h1 className="manrope" style={{color: '#EEEEEE', textAlign: 'center', fontSize: '400%', fontWeight: '700', paddingTop: '40px'}}>Henry Turner</h1>
-                            <p className="manrope" style={{color: '#EEEEEE', textAlign: 'center', fontSize: '150%', fontWeight: '300'}}>Thoughts, projects, and things I've learned.</p>
+                            <p className="manrope" style={{color: '#EEEEEE', textAlign: 'center', fontSize: '150%', fontWeight: '300'}}>Books, projects, and things I've learned.</p>
                         </div>
                     </Jumbotron>
                 </div>
-                <div style={{width: '50%', margin: 'auto'}}>
+                <div style={{width: '60%', margin: 'auto'}}>
                     <Switch>
                         <Route exact path="/">
                             <Home/>
@@ -60,6 +62,9 @@ class App extends React.Component {
                         </Route>
                         <Route path="/blog">
                             <Blog/>
+                        </Route>
+                        <Route path="/projects">
+                            <Projects/>
                         </Route>
                     </Switch>
                 </div>

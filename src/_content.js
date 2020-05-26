@@ -1045,7 +1045,7 @@ const blogPosts = [
         thumbnail: "https://images-na.ssl-images-amazon.com/images/I/51ojLicqjBL._SX329_BO1,204,203,200_.jpg",
         summary: "I was approached with a too-good-to-be-true opportunity that turned out to be a pyramid scheme. I " +
             "didn't think I was the sort of person to fall for that sort of thing but I almost did. This post briefly explains " +
-            "what happened, why it was effective, and why others might be falling for the same trick.",
+            "what happened, why it was effective, and how to not fall for the same trick.",
         date: "21st May 2020",
         html: content.mentorship_scam
     },

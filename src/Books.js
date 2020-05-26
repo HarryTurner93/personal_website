@@ -41,8 +41,21 @@ class Book extends  React.Component {
 const books = {
     year_2020: [
         {
+            title: "Economics in One Lesson",
+            author: "Henry Hazlitt",
+            summary: <div>A good introduction to some fundamental economic principles and mental models in economics,
+                the main one being that whatever policy is implemented, you must consider effects on all parties, not
+                just the most vocal one, and secondary effects over time, not just the immediate ones. This won't make you a
+                master in economics but it will equip you with some core fundamental truths that will help you to reason
+                intelligently about many of the political and economic problems we have today.
+
+            </div>,
+            url: "https://images-na.ssl-images-amazon.com/images/I/714VzwnSygL.jpg",
+            again: true
+        },
+        {
             title: "12 Rules for Life: An Antidote to Chaos",
-            author: "",
+            author: "Jordan Peterson",
             summary: <div>First off, read this one <i><u>after</u></i> reading <a href='#Sapiens'>Sapiens</a>, <a href='#Homo Deus'>Homo Deus</a>, and
                      <a href='#21 Lessons for the 21st Century'> 21 Lessons for the 21st Century</a>, in that order.
                      This book is what I thought 21 Lessons would be. Both authors build on

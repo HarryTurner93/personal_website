@@ -41,6 +41,21 @@ class Book extends  React.Component {
 const books = {
     year_2020: [
         {
+            title: "The Places in Between",
+            author: "Rory Stewart",
+            summary: <div>An eye-opening description of his walk across Afghanistan. A raw, and unbiased view of rural
+                Afghan life. It's not a description of a sightseeing or backpacking holiday like I would have imagined it, no hostels,
+                no airbnb, no shops or cafes. What I found most incredible was how every night he finds a village and the hosts take
+                him in (most of the time), feed him, provide him (some) shelter, and talk and share their lives with him. They
+                provide stories of their ancestory and past, send their sons to guide him over the snowy mountains to the next village 20 miles away,
+                and generally welcome him to their homes (often dry mud huts) all because he's a guest in their valley. Imagine
+                trying that nowaways in the UK. For me it was a stark insight into what life was probably like hundreds of years ago. I bet
+                life was a lot more personable and human back then.
+            </div>,
+            url: "https://images-na.ssl-images-amazon.com/images/I/51p6r7l3vNL._SX333_BO1,204,203,200_.jpg",
+            again: true
+        },
+        {
             title: "Economics in One Lesson",
             author: "Henry Hazlitt",
             summary: <div>A good introduction to some fundamental economic principles and mental models in economics,
@@ -251,14 +266,13 @@ class Books extends React.Component {
         return (
             <div style={{color: '#333333'}}>
                 <div className='manrope' style={{padding: '50px'}}>
-                    <h1>My Reading List.</h1>
+                    <h1>Reading List.</h1>
                 </div>
                 <div className='manrope' style={{paddingLeft: '50px', paddingRight: '50px'}}>
                     <p>This is a collection of books I've read since I started properly keeping track. For each book
-                    I'll make a short note of what it was about, what I liked and didn't like, and the key takeaway. The
+                    I make a short note of what it was about, what I liked and didn't like, and the key takeaway. The
                     icon indicating whether or not I'll read it again is mostly a note to myself that I probably didn't
-                    get everything out of the book on the first read and I need to go back to it. Just because I'm not planning
-                    on reading it again, doesn't mean it wasn't good.</p>
+                    get everything out of the book on the first read and to go back and read it again. </p>
                 </div>
                 <div className='manrope' style={{padding: '50px'}}>
                     <h3>2020</h3>

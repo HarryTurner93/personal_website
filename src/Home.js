@@ -19,12 +19,12 @@ class Home extends React.Component {
                     <div className='manrope' style={{padding: '50px', paddingBottom: '0px'}}>
                         <h1>Home.</h1>
                     </div>
-                    <div style={{padding: '50px'}}>
+                    <div style={{padding: '50px', paddingTop: '30px'}}>
                         <p>Welcome to my website, a place where I keep a record of projects I've done, reviews of books I've read,
                         and thoughts and ideas I've had.</p>
                     </div>
 
-                   <div style={{padding: '50px'}}>
+                   <div style={{padding: '50px', paddingTop: '10px'}}>
                         <h3>Latest Posts and Articles.</h3>
                     </div>
                     {/* Display the blog links. */}

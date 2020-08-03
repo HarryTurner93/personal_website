@@ -54,13 +54,16 @@ function CaptionedImage(props) {
 }
 
 const content = {
+    object_detection_part_1:
+        <div>
+        </div>,
     about_me:
         <div>
             <p>
                 Hi, my name's Henry, (although I also go by Harry). I'm a machine learning engineer at work, and
-                all-round nerd at home. I'll get involved with any project that looks like fun or if I think
-                there's something to be learned! I am also a voracious reader. The tech world can be fast paced
-                and exhausting, so to relax I get out into nature as much as I can, either on my gravel bike
+                a tinkerer at home. I'll do any project that looks like fun or if I think
+                there's something to be learned. I also read a lot. The tech world can be exhausting,
+                so to relax I get out into nature as much as I can, either on my gravel bike
                 (who needs roads), or under the water in the UK coasts and quarries.
             </p>
             <CaptionedImage image={landsEnd} caption="Off-road cycle from Lands End to Bristol. That's me on the left."/>
@@ -1088,18 +1091,22 @@ const specialPosts = {
 const knowledgePosts = {
     object_detection_1: {
         title: "Problem Formation and Metrics",
+        url: "object_detection_part_1",
         html: content.about_me
     },
     object_detection_2: {
         title: "Two Stage Detectors: R-CNN to Mesh R-CNN",
+        url: "object_detection_part_2",
         html: content.about_me
     },
     object_detection_3: {
         title: "Single Stage Detectors: SSD to RetinaNet",
+        url: "object_detection_part_3",
         html: content.about_me
     },
     object_detection_4: {
         title: "The State of the Art (as of 2019)",
+        url: "object_detection_part_4",
         html: content.about_me
     }
 }

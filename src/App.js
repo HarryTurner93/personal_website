@@ -17,6 +17,7 @@ import Books from './Books.js';
 import Knowledge from './Knowledge.js';
 import Blog from './Blog.js';
 import Projects from "./Projects";
+import Solutions from "./Solutions";
 
 class App extends React.Component {
 
@@ -37,6 +38,7 @@ class App extends React.Component {
                                     <NavItem href="/books"><Nav.Link as={Link} to="/books"  className="manrope"  style={{paddingLeft: '20px', paddingRight: '20px', color: '#333333', fontSize: '130%', fontWeight: '700'}}>Books</Nav.Link></NavItem>
                                     <NavItem href="/blog"><Nav.Link as={Link} to="/blog"  className="manrope"  style={{paddingLeft: '20px', paddingRight: '20px', color: '#333333', fontSize: '130%', fontWeight: '700'}}>Blog Posts</Nav.Link></NavItem>
                                     <NavItem href="/projects"><Nav.Link as={Link} to="/projects"  className="manrope"  style={{paddingLeft: '20px', paddingRight: '20px', color: '#333333', fontSize: '130%', fontWeight: '700'}}>Projects</Nav.Link></NavItem>
+                                    <NavItem href="/projects"><Nav.Link as={Link} to="/solutions"  className="manrope"  style={{paddingLeft: '20px', paddingRight: '20px', color: '#333333', fontSize: '130%', fontWeight: '700'}}>Solutions</Nav.Link></NavItem>
                                 </Nav>
                             </Navbar.Collapse>
                         </Navbar>
@@ -65,6 +67,9 @@ class App extends React.Component {
                         </Route>
                         <Route path="/projects">
                             <Projects/>
+                        </Route>
+                        <Route path="/solutions">
+                            <Solutions/>
                         </Route>
                     </Switch>
                 </div>

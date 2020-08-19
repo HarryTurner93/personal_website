@@ -22,7 +22,7 @@ class Projects extends React.Component {
                         </div>
 
                         {/* Display the blog links. */}
-                        <div style={{display: 'flex', flexWrap: 'wrap'}}>
+                        <div style={{display: 'flex', flexDirection: 'column'}}>
                             {projectPosts.map((item) =>
                                 <div style={{padding: '25px'}}>
                                     <PostLink page='projects' item={item}/>

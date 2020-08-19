@@ -8,7 +8,7 @@ class Book extends  React.Component {
     render() {
         let { title, author, summary, url, again } = this.props;
         return (
-            <Paper style={{padding: '20px'}} elevation={3}>
+            <Paper style={{padding: '20px'}} elevation={1}>
                 <div style={{display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center'}}>
                     <div id={title}>
                         <h4>{title}</h4>

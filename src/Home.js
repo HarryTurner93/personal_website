@@ -28,7 +28,7 @@ class Home extends React.Component {
                         <h3>Latest Posts and Articles.</h3>
                     </div>
                     {/* Display the blog links. */}
-                    <div style={{display: 'flex', flexWrap: 'wrap'}}>
+                    <div style={{display: 'flex', flexDirection: 'column'}}>
                         {combinedPosts.map((item) =>
                             <div style={{padding: '25px'}}>
                                 <PostLink page='blog' item={item}/>

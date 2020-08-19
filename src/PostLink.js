@@ -23,15 +23,10 @@ function PostLink(props) {
     }
 
     return (
-        <Card onClick={() => {goToURL(link)}} elevation={3} style={{width: '300px'}}>
+        <Card onClick={() => {goToURL(link)}} elevation={0} style={{width: '100%'}}>
             <CardActionArea>
-                <CardMedia
-                    image={item.thumbnail}
-                    style={{width: '100%', height: '200px'}}
-                    title={item.title}
-                />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">{item.title}</Typography>
+                    <Typography gutterBottom variant="h5" component="h2"><u>{item.title}</u></Typography>
                     <Typography gutterBottom variant="h7" component="h7"><i>{item.date}</i></Typography>
                     <Typography variant="body2" color="textSecondary" component="p" style={{paddingTop: '10px'}}>{item.summary}</Typography>
                 </CardContent>

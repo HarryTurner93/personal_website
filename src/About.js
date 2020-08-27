@@ -4,7 +4,7 @@ import React from "react";
 import Post from "./Post";
 
 // Import blog data.
-import { specialPosts } from './_content';
+import { specialPosts } from './content/_content';
 
 class About extends React.Component {
 

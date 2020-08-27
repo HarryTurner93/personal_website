@@ -18,7 +18,7 @@ function TextLink(props) {
     }
 
     return (
-        <p onClick={() => {goToURL(link)}}>{text}</p>
+        <p style={{cursor: "pointer"}} onClick={() => {goToURL(link)}}><u>{text}</u></p>
     )
 }
 

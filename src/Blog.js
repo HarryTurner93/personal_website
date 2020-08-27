@@ -5,7 +5,7 @@ import {Route, Switch} from "react-router-dom";
 import Post from "./Post";
 
 // Import blog data.
-import { blogPosts } from './_content';
+import { blogPosts } from './content/_content';
 import PostLink from "./PostLink";
 
 class Blog extends React.Component {

@@ -6,7 +6,7 @@ import Post from "./Post";
 import PostLink from "./PostLink";
 
 // Import blog data.
-import { projectPosts } from './_content';
+import { projectPosts } from './content/_content';
 
 class Projects extends React.Component {
 

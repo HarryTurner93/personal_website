@@ -1,7 +1,7 @@
 import React from "react";
 import TextLink from "./TextLink";
 import Post from "./Post";
-import {knowledgePosts} from "./_content";
+import {knowledgePosts} from "./content/_content";
 import {Route, Switch} from "react-router-dom";
 
 
@@ -23,12 +23,12 @@ class Knowledge extends React.Component {
                         </div>
                         <div style={{padding: '50px', paddingTop: '0px'}}>
                             <h3>Computer Vision</h3>
-                            <h4>Object Detection</h4>
+                            <h4>Object Detection with Deep Learning</h4>
                             <ul>
-                                <li><TextLink text="Part 1 - Problem Formation and Metrics" page="knowledge" item={knowledgePosts.object_detection_1}/></li>
-                                <li><p>Part 2 - Two Stage Detectors: R-CNN to Mesh R-CNN</p></li>
-                                <li><p>Part 3 - Single Stage Detectors: SSD to RetinaNet</p></li>
-                                <li><p>Part 4 - The State of the Art (as of 2019): EfficientDet and the DETR</p></li>
+                                <li><TextLink text={knowledgePosts.object_detection_1.title} page="knowledge" item={knowledgePosts.object_detection_1}/></li>
+                                <li><TextLink text={knowledgePosts.object_detection_2.title} page="knowledge" item={knowledgePosts.object_detection_2}/></li>
+                                <li><TextLink text={knowledgePosts.object_detection_3.title} page="knowledge" item={knowledgePosts.object_detection_3}/></li>
+                                <li><TextLink text={knowledgePosts.object_detection_4.title} page="knowledge" item={knowledgePosts.object_detection_4}/></li>
                             </ul>
                         </div>
 

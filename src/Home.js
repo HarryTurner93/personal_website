@@ -1,6 +1,6 @@
 import React from "react";
 import {Route, Switch} from "react-router-dom";
-import {blogPosts, projectPosts} from "./_content";
+import {blogPosts, projectPosts} from "./content/_content";
 import PostLink from "./PostLink";
 import Post from "./Post";
 

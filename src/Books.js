@@ -41,6 +41,19 @@ class Book extends  React.Component {
 const books = {
     year_2020: [
         {
+            title: "The Black Swan",
+            author: "Nassim Nicholas Taleb",
+            summary: <div>Read because I liked his first one, Fooled by Randomness. (I've actually read this a few times now).
+                The book is about one central idea, that there is a class of events that are rare but have disproportionate
+                impact (positive or negative), and that they are fundamentally unpredictable. Despite the simple message, it's one
+                of those books where every page is packed with insights. What I like the most is that it's slightly mathematical,
+                slightly philosophical, and (to be honest) quite rambling and unstructured, but for that's a positive, it makes
+                it fun to read.
+            </div>,
+            url: "https://images-na.ssl-images-amazon.com/images/I/71Ah1mK0WvL.jpg",
+            again: true
+        },
+        {
             title: "The Places in Between",
             author: "Rory Stewart",
             summary: <div>An eye-opening description of his walk across Afghanistan. A raw, and honest view of rural

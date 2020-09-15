@@ -20,15 +20,14 @@ const about_me_content =
             I work at <a href="https://www.rovco.com/">Rovco</a>, a rapidly growing tech company in the
             off-shore renewables industry. Essentially an ROV (Remotely Operated Vehicle) and hydrographic
             survey company, but with a very strong R&D arm in 3D, AI, and autonomous robotics.
-            <b> Why do I love it?</b> I get to work on real problems in computer vision and robotics,
-            where my work has a positive impact on the planet (95% of our business is in wind farms).
+            I get to work on real problems in computer vision and robotics,
+            where my work has a positive impact on the planet (95% of our business is in offshore wind).
         </p>
         <CaptionedImage image={rov} caption="An ROV equipped with a Rovco SubSLAM camera system for surveying in 3D."/>
         <p>
             This website isn't a blog, it's a journal, a living document that I'll revisit and rewrite again
             and again. It's somewhere I can keep all my thoughts and ideas, somewhere to keep track of my
-            progress, somewhere to reflect and write down things I've learned along the way. It's basically
-            the Wiki of me. Although I'm doing it for me, I'm making it public in case anything here is of
+            progress, somewhere to reflect and write down things I've learned along the way. Although I'm doing it for me, I'm making it public in case anything here is of
             use to somebody else.
         </p>
         <CaptionedImage image={shepards} caption="Who said bike touring can't be done in style?"/>

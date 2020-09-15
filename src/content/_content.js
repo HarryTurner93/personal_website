@@ -1,4 +1,4 @@
-import sourdough_complexity_content from "./blog/sourdough_complexity"
+import the_so_what_content from "./blog/the_so_what";
 import mentorship_scam_content from "./blog/mentorship_scam";
 import neural_network_library_content from "./projects/neural_network_library";
 import small_car_control_content from "./projects/small_car_control";
@@ -7,11 +7,11 @@ import object_detection_1_content from "./knowledge/object_detection_1";
 
 const blogPosts = [
     {
-        title: "Sourdough, Self Tracking, and Complexity",
-        url: "sourdough_complexity",
-        summary: "<summary>",
-        date: "26th August 2020",
-        html: sourdough_complexity_content
+        title: "The 'So What?'",
+        url: "the_so_what",
+        summary: "A technique for sourcing, triaging, reading, and storing articles. ",
+        date: "15th September 2020",
+        html: the_so_what_content
     },
     {
         title: "The Mentorship Scam",
@@ -26,13 +26,6 @@ const blogPosts = [
 ]
 
 const projectPosts = [
-    {
-        title: "Generating Artificial Training Data",
-        url: "artificial_training_data",
-        summary: "",
-        date: "??",
-        html: ""
-    },
     {
         title: "Building a Neural Network Library from Scratch",
         url: "neural_network_library",

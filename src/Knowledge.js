@@ -18,8 +18,9 @@ class Knowledge extends React.Component {
                             <h1>Machine Learning.</h1>
                         </div>
                         <div style={{padding: '50px', paddingBottom: '0px'}}>
-                            <p>Welcome to my website, a place where I keep a record of projects I've done, reviews of books I've read,
-                            and thoughts and ideas I've had.</p>
+                            <p>Learn about topic, deep dive. Record here what I learn, aimed at the person I was
+                                6 months ago, so that when I forget I can come back. Tour of papers, aiming at linking
+                            everything together so I can holistically understand the topic. I write these as tutorials.</p>
                         </div>
                         <div style={{padding: '50px', paddingTop: '0px'}}>
                             <h3>Computer Vision</h3>

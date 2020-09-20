@@ -7,10 +7,10 @@ function TextLink(props) {
     let history = useHistory()
 
     // Destructure props.
-    let { item, text, page} = props;
+    let { item, text} = props;
 
     // Compute link, add the /blog prefix.
-    let link = `/${page}/${item.url}`;
+    let link = `/${item.url}`;
 
     // Redirect using Browser Router.
     const goToURL = (url) => {

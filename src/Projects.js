@@ -25,7 +25,7 @@ class Projects extends React.Component {
                         <div style={{display: 'flex', flexDirection: 'column'}}>
                             {projectPosts.map((item) =>
                                 <div style={{padding: '25px'}}>
-                                    <PostLink page='projects' item={item}/>
+                                    <PostLink item={item}/>
                                 </div>
                             )}
                         </div>
@@ -34,7 +34,7 @@ class Projects extends React.Component {
 
                     {/* Display all the blog posts. */}
                     {projectPosts.map((item) =>
-                        <Route exact path={`/projects/${item.url}`}>
+                        <Route exact path={`/${item.url}`}>
                             <Post item={item} />
                         </Route>
                     )}

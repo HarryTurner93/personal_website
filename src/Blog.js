@@ -25,7 +25,7 @@ class Blog extends React.Component {
                         <div style={{display: 'flex', flexWrap: 'wrap'}}>
                             {blogPosts.map((item) =>
                                 <div style={{padding: '25px'}}>
-                                    <PostLink page='blog' item={item}/>
+                                    <PostLink item={item}/>
                                 </div>
                             )}
                         </div>
@@ -34,7 +34,7 @@ class Blog extends React.Component {
 
                     {/* Display all the blog posts. */}
                     {blogPosts.map((item) =>
-                        <Route exact path={`/blog/${item.url}`}>
+                        <Route exact path={`/${item.url}`}>
                             <Post item={item} />
                         </Route>
                     )}

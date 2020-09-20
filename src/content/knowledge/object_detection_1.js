@@ -13,7 +13,14 @@ const object_detection_1_content =
             Wealth of stuff on OD done before.
         </p>
         <p>
-
+            problem formation, assume familiarity with CNNs, sliding window approach, recognition with regions.
+            hoeim, understanding failure modes, metrics, datasets.what is AP
+            define localisation, detection, classification.
+            define regions
+            need to know embeddings, feature extractors, classifiers
+        </p>
+        <p>
+             Cheat sheet, timings, performance on benchmarks, explain benchmarks.
         </p>
 
     </div>

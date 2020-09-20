@@ -21,6 +21,12 @@ import Solutions from "./Solutions";
 
 class App extends React.Component {
 
+    componentDidUpdate(prevProps) {
+        if (this.props.location !== prevProps.location) {
+        window.scrollTo(0, 0)
+        }
+    }
+
     render() {
         let jumboClass = (this.props.location.pathname === '/') ? 'jumboBig' : 'jumboSmall';
         let nameOpacity = (this.props.location.pathname === '/') ? 'nameVisible' : 'nameHidden';

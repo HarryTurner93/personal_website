@@ -1,6 +1,6 @@
 import React from "react";
 import {Route, Switch} from "react-router-dom";
-import {blogPosts, projectPosts} from "./content/_content";
+import {blogPosts, projectPosts, knowledgePosts} from "./content/_content";
 import PostLink from "./PostLink";
 import Post from "./Post";
 
@@ -9,7 +9,19 @@ class Home extends React.Component {
     render() {
 
         // Compile all articles.
-        let combinedPosts = blogPosts.concat(projectPosts)
+        let combinedPosts = blogPosts.concat(projectPosts).concat(Object.values(knowledgePosts))
+
+        function compare( a, b ) {
+            if ( a.date < b.date ){
+                return 1;
+            }
+            if ( a.date > b.date ){
+                return -1;
+            }
+            return 0;
+            }
+
+        combinedPosts.sort( compare );
 
         return (
 
@@ -31,7 +43,7 @@ class Home extends React.Component {
                     <div style={{display: 'flex', flexDirection: 'column'}}>
                         {combinedPosts.map((item) =>
                             <div style={{padding: '25px'}}>
-                                <PostLink page='blog' item={item}/>
+                                <PostLink item={item}/>
                             </div>
                         )}
                     </div>

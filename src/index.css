@@ -29,11 +29,30 @@ p {
 h4 {
   font-family: 'Lora', serif;
   font-size: 110%;
-  font-weight: 400;
+  font-weight: 600;
   text-align: justify;
   line-height: 25pt;
   padding-bottom: 10px;
   padding-top: 10px;
+}
+h5 {
+  font-family: 'Lora', serif;
+  font-size: 110%;
+  font-weight: 1000;
+  text-align: justify;
+  line-height: 25pt;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+a:link {
+  color: black;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: black;
+  text-decoration: underline;
 }
 
 .manrope {

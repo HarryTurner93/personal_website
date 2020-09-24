@@ -11,7 +11,7 @@ import TextLink from "../../TextLink";
 
 const object_detection_rcnn_content =
     <div>
-        <h5>R-CNN</h5>
+        <h3>R-CNN</h3>
         <p style={{textIndent: '30px', textAlign: 'left'}}>
             This brings us to the first object detector that I want to discuss, it's really the one that started it
             all, <a href="https://arxiv.org/abs/1311.2524">R-CNN (Regions with CNN Features)</a>. When it was released in late 2014, it beat all existing object detectors on
@@ -163,6 +163,9 @@ const object_detection_rcnn_content =
             other side of the image, it doesn't matter how good your regressor is, it can't adjust it that far. So the authors only picked
             boxes that overlapped the ground truth by 0.7 for training. Yet another training step in our multi-stage training procedure,
             wouldn't it be great if there was a training procedure that did it all in one go (hint hint)...
+        </p>
+        <p style={{textIndent: '30px', textAlign: 'left'}}>
+            There is a technical detail on how the boxes are parameterised, I will cover this in a couple of posts time in Fast R-CNN.
         </p>
         <h5>Why SVMs?</h5>
         <p style={{textIndent: '30px', textAlign: 'left'}}>

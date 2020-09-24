@@ -58,7 +58,7 @@ const knowledgePosts = {
         url: "knowledge/object_detection_rcnn",
         html: object_detection_rcnn_content,
         date: "2020/09/18",
-        series: ['object_detection_rcnn', 'object_detection_sppnet'],
+        series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn'],
         forward_to: 'object_detection_sppnet'
     },
     object_detection_sppnet: {
@@ -66,9 +66,16 @@ const knowledgePosts = {
         url: "knowledge/object_detection_sppnet",
         html: object_detection_sppnet_content,
         date: "2020/09/20",
-        series: ['object_detection_rcnn', 'object_detection_sppnet'],
+        series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn'],
+        forward_to: 'object_detection_fastrcnn'
     },
-
+    object_detection_fastrcnn: {
+        title: "Fast R-CNN",
+        url: "knowledge/object_detection_fastrcnn",
+        html: object_detection_fastrcnn_content,
+        date: "2020/09/20",
+        series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn'],
+    }
 }
 
 export { blogPosts, projectPosts, specialPosts, knowledgePosts };

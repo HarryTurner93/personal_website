@@ -73,7 +73,7 @@ const knowledgePosts = {
         title: "Fast R-CNN",
         url: "knowledge/object_detection_fastrcnn",
         html: object_detection_fastrcnn_content,
-        date: "2020/09/20",
+        date: "2020/09/24",
         series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn'],
     }
 }

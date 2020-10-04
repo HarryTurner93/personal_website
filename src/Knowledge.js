@@ -25,6 +25,7 @@ class Knowledge extends React.Component {
                                     <li><TextLink text={knowledgePosts.object_detection_rcnn.title} item={knowledgePosts.object_detection_rcnn}/></li>
                                     <li><TextLink text={knowledgePosts.object_detection_sppnet.title} item={knowledgePosts.object_detection_sppnet}/></li>
                                     <li><TextLink text={knowledgePosts.object_detection_fastrcnn.title} item={knowledgePosts.object_detection_fastrcnn}/></li>
+                                    <li><TextLink text={knowledgePosts.object_detection_faster_rcnn.title} item={knowledgePosts.object_detection_faster_rcnn}/></li>
                                 </ul>
                             </ul>
 

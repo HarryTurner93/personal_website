@@ -7,6 +7,7 @@ import object_detection_1_content from "./knowledge/object_detection_1";
 import object_detection_rcnn_content from "./knowledge/object_detection_rcnn";
 import object_detection_sppnet_content from "./knowledge/object_detection_sppnet";
 import object_detection_fastrcnn_content from "./knowledge/object_detection_fastrcnn";
+import object_detection_faster_rcnn_content from "./knowledge/object_detection_faster_rcnn";
 
 const blogPosts = [
     {
@@ -58,7 +59,8 @@ const knowledgePosts = {
         url: "knowledge/object_detection_rcnn",
         html: object_detection_rcnn_content,
         date: "2020/09/18",
-        series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn'],
+        series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn',
+        'object_detection_faster_rcnn'],
         forward_to: 'object_detection_sppnet'
     },
     object_detection_sppnet: {
@@ -66,7 +68,8 @@ const knowledgePosts = {
         url: "knowledge/object_detection_sppnet",
         html: object_detection_sppnet_content,
         date: "2020/09/20",
-        series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn'],
+       series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn',
+        'object_detection_faster_rcnn'],
         forward_to: 'object_detection_fastrcnn'
     },
     object_detection_fastrcnn: {
@@ -74,7 +77,17 @@ const knowledgePosts = {
         url: "knowledge/object_detection_fastrcnn",
         html: object_detection_fastrcnn_content,
         date: "2020/09/24",
-        series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn'],
+        series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn',
+        'object_detection_faster_rcnn'],
+        forward_to: 'object_detection_faster_rcnn'
+    },
+    object_detection_faster_rcnn: {
+        title: "Faster R-CNN",
+        url: "knowledge/object_detection_faster_rcnn",
+        html: object_detection_faster_rcnn_content,
+        date: "2020/10/4",
+        series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn',
+        'object_detection_faster_rcnn'],
     }
 }
 

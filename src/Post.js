@@ -67,7 +67,8 @@ class Post extends React.Component {
 
             // Compute nicer date.
             let pieces = item.date.split("/")
-            let parsed_date = `${parse_day(pieces[2])} ${parse_month(pieces[1])} ${pieces[0]}`
+            parsed_date = `${parse_day(pieces[2])} ${parse_month(pieces[1])} ${pieces[0]}`
+
         }
 
         // If the item has a 'forward_to' property, render a 'Next' button.

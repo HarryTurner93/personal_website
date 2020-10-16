@@ -9,7 +9,7 @@ import shepards from "../../images/shepards.jpg";
 const about_me_content =
     <div>
         <p>
-            Hi, my name's Henry, (although I also go by Harry). I'm a machine learning engineer at work, and
+            Hi, I'm Harry, I'm a machine learning engineer at work, and
             a tinkerer at home. I'll do any project that looks like fun or if I think
             there's something to be learned. I also read a lot. The tech world can be exhausting,
             so to relax I get out into nature as much as I can, either on my gravel bike
@@ -25,7 +25,7 @@ const about_me_content =
         </p>
         <CaptionedImage image={rov} caption="An ROV equipped with a Rovco SubSLAM camera system for surveying in 3D."/>
         <p>
-            This website isn't a blog, it's a journal, a living document that I'll revisit and rewrite again
+            This website isn't just a blog, it's a journal, a living document that I'll revisit and rewrite again
             and again. It's somewhere I can keep all my thoughts and ideas, somewhere to keep track of my
             progress, somewhere to reflect and write down things I've learned along the way. Although I'm doing it for me, I'm making it public in case anything here is of
             use to somebody else.

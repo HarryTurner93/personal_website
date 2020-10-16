@@ -22,6 +22,7 @@ const object_detection_1_content =
             define regions
             need to know embeddings, feature extractors, classifiers
             parameterisation of bounding boxes.
+            instance segemnetation vs semantic segmentation.
         </p>
         <p>
              Cheat sheet, timings, performance on benchmarks, explain benchmarks.

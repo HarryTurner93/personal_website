@@ -8,6 +8,7 @@ import object_detection_rcnn_content from "./knowledge/object_detection_rcnn";
 import object_detection_sppnet_content from "./knowledge/object_detection_sppnet";
 import object_detection_fastrcnn_content from "./knowledge/object_detection_fastrcnn";
 import object_detection_faster_rcnn_content from "./knowledge/object_detection_faster_rcnn";
+import object_detection_mask_rcnn_content from "./knowledge/object_detection_maskrcnn";
 
 const blogPosts = [
     {
@@ -56,38 +57,61 @@ const specialPosts = {
 const knowledgePosts = {
     object_detection_rcnn: {
         title: "R-CNN",
+        summary: "Introduction to the first model in the two-stage object detection family. We look at" +
+            "all parts of the pipeline in detail, region proposals, feature extraction, classification, and" +
+            " bounding box regression.",
         url: "knowledge/object_detection_rcnn",
         html: object_detection_rcnn_content,
         date: "2020/09/18",
         series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn',
-        'object_detection_faster_rcnn'],
+        'object_detection_faster_rcnn', 'object_detection_mask_rcnn'],
         forward_to: 'object_detection_sppnet'
     },
     object_detection_sppnet: {
         title: "Spatial Pyramid Pooling",
+        summary: "A short post, looking at the Spatial Pyramid Pooling layer, and why that improved the" +
+            " speed of R-CNN by over 200 times by sharing computation over regions.",
         url: "knowledge/object_detection_sppnet",
         html: object_detection_sppnet_content,
         date: "2020/09/20",
        series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn',
-        'object_detection_faster_rcnn'],
+        'object_detection_faster_rcnn', 'object_detection_mask_rcnn'],
         forward_to: 'object_detection_fastrcnn'
     },
     object_detection_fastrcnn: {
         title: "Fast R-CNN",
+        summary: "Explains the evolution of R-CNN into Fast R-CNN with integration of the ROI Pool layer" +
+            " and multi task training. In this post we also start to think about networks in terms of" +
+            " backbones and heads. We finish with a deep dive into bounding box parameterisation.",
         url: "knowledge/object_detection_fastrcnn",
         html: object_detection_fastrcnn_content,
         date: "2020/09/24",
         series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn',
-        'object_detection_faster_rcnn'],
+        'object_detection_faster_rcnn', 'object_detection_mask_rcnn'],
         forward_to: 'object_detection_faster_rcnn'
     },
     object_detection_faster_rcnn: {
         title: "Faster R-CNN",
+        summary: "A thorough explanation of Faster R-CNN, that spends quite a bit of time building up" +
+            " a framework for thinking about modern object detectors. We cover anchors and the RPN head in detail, " +
+            "and compare the architecture of Faster R-CNN to the others we've looked at so far to understand the" +
+            "patterns.",
         url: "knowledge/object_detection_faster_rcnn",
         html: object_detection_faster_rcnn_content,
-        date: "2020/10/4",
+        date: "2020/10/11",
         series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn',
-        'object_detection_faster_rcnn'],
+        'object_detection_faster_rcnn', 'object_detection_mask_rcnn'],
+        forward_to: 'object_detection_mask_rcnn'
+    },
+    object_detection_mask_rcnn: {
+        title: "Mask R-CNN",
+        summary: "Introduces Mask R-CNN as a simple addition of a new branch to the detector head. We cover the " +
+            "new branch architecture in detail with an example and explore the new ROI Align layer and how it works.",
+        url: "knowledge/object_detection_mask_rcnn",
+        html: object_detection_mask_rcnn_content,
+        date: "2020/10/16",
+        series: ['object_detection_rcnn', 'object_detection_sppnet', 'object_detection_fastrcnn',
+        'object_detection_faster_rcnn', 'object_detection_mask_rcnn'],
     }
 }
 

@@ -50,7 +50,7 @@ class App extends React.Component {
                         </Navbar>
                         <div className={nameOpacity} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                             <img src={logo} style={{width: '100px', paddingTop: '40px'}}/>
-                            <h1 className="manrope" style={{color: '#333333', textAlign: 'center', fontSize: '400%', fontWeight: '700', paddingTop: '10px'}}>Harry's Projects</h1>
+                            <h1 className="manrope" style={{color: '#333333', textAlign: 'center', fontSize: '400%', fontWeight: '700', paddingTop: '10px'}}>Harry Turner</h1>
                             <p className="manrope" style={{color: '#333333', textAlign: 'center', fontSize: '150%', fontWeight: '300'}}>Books, projects, and things I've learned.</p>
                         </div>
                     </Jumbotron>

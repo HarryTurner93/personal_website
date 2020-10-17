@@ -9,6 +9,7 @@ import object_detection_sppnet_content from "./knowledge/object_detection_sppnet
 import object_detection_fastrcnn_content from "./knowledge/object_detection_fastrcnn";
 import object_detection_faster_rcnn_content from "./knowledge/object_detection_faster_rcnn";
 import object_detection_mask_rcnn_content from "./knowledge/object_detection_maskrcnn";
+import artificial_training_data_content from "./projects/artificial_training_data";
 
 const blogPosts = [
     {
@@ -31,6 +32,13 @@ const blogPosts = [
 ]
 
 const projectPosts = [
+    {
+        title: "Generating Artificial Training Data",
+        url: "projects/artificial_training_data",
+        summary: "I write an algorithm to generate artificial training images, and then train an image classifier to classify real images with an accuracy of 98%",
+        date: "2018/07/17",
+        html: artificial_training_data_content
+    },
     {
         title: "Building a Neural Network Library from Scratch",
         url: "projects/neural_network_library",

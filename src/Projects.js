@@ -13,23 +13,21 @@ class Projects extends React.Component {
     render() {
 
         return (
-            <div style={{color: '#333333'}}>
+            <div>
                 <Switch>
-                    <Route exact path="/projects">
 
-                        <div className='manrope' style={{padding: '50px'}}>
+                    <Route exact path="/projects">
+                        <div className="contentBlockTitle">
                             <h1>Projects.</h1>
                         </div>
-
-                        {/* Display the blog links. */}
+                        {/* Display the project links. */}
                         <div style={{display: 'flex', flexDirection: 'column'}}>
                             {projectPosts.map((item) =>
-                                <div style={{padding: '25px'}}>
+                                <div className="contentBlock">
                                     <PostLink item={item}/>
                                 </div>
                             )}
                         </div>
-
                     </Route>
 
                     {/* Display all the blog posts. */}

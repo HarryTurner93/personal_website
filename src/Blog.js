@@ -13,23 +13,21 @@ class Blog extends React.Component {
     render() {
 
         return (
-            <div style={{color: '#333333'}}>
+            <div>
                 <Switch>
-                    <Route exact path="/blog">
 
-                        <div className='manrope' style={{padding: '50px'}}>
+                    <Route exact path="/blog">
+                        <div className="contentBlockTitle">
                             <h1>Thoughts and Ideas.</h1>
                         </div>
-
                         {/* Display the blog links. */}
-                        <div style={{display: 'flex', flexWrap: 'wrap'}}>
+                        <div style={{display: 'flex', flexDirection: 'column'}}>
                             {blogPosts.map((item) =>
-                                <div style={{padding: '25px'}}>
+                                <div className="contentBlock">
                                     <PostLink item={item}/>
                                 </div>
                             )}
                         </div>
-
                     </Route>
 
                     {/* Display all the blog posts. */}

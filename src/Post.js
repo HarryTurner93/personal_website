@@ -1,6 +1,7 @@
 import React from 'react';
 import {knowledgePosts} from "./content/_content";
 import TextLink from "./TextLink";
+import "./App.css"
 
 class Post extends React.Component {
 
@@ -14,7 +15,7 @@ class Post extends React.Component {
         if (typeof item.series !== 'undefined') {
             series =
             <div className='manrope' style={{padding: '50px', paddingTop: '10px', paddingBottom: '10px'}}>
-                <h5>In this Series:</h5>
+                <h3>In this Series:</h3>
                 <ul>
                     {item.series.map((index_item, index) => (
                     <li key={index}>
@@ -74,22 +75,29 @@ class Post extends React.Component {
         // If the item has a 'forward_to' property, render a 'Next' button.
         let forward_to = ""
         if (typeof item.forward_to !== 'undefined') {
-            forward_to = <p>Next in this Series: <TextLink text={knowledgePosts[item.forward_to].title} page="knowledge" item={knowledgePosts[item.forward_to]}/></p>
+            forward_to = <div>
+                <p style={{color: "#3D72AD"}}>I'm always looking for feedback, if you have any comments on this post, either content, style, or quality of explanation, please do email me your thoughts at <b>henry.j.turner@gmail.com</b></p>
+                <p>Next in this Series: <TextLink text={knowledgePosts[item.forward_to].title} page="knowledge" item={knowledgePosts[item.forward_to]}/></p>
+            </div>
         }
 
         return (
-            <div style={{color: '#333333'}}>
-                <div className='manrope' style={{padding: '50px', paddingBottom: '0px'}}>
+            <div>
+                <div className="contentBlockTitle">
                     <h1>{item.title}</h1>
+                    {/* Render the parsed data if it provided. */}
+                    {parsed_date===""?
+                    null
+                    :
+                        <h5><i>{parsed_date}</i></h5>
+                    }
                 </div>
-                <div className='manrope' style={{padding: '50px', paddingTop: '10px', paddingBottom: '10px'}}>
-                    <h4><i>{parsed_date}</i></h4>
-                </div>
+
                 {series}
-                <div style={{padding: '50px', paddingBottom:'20px'}}>
+                <div className="contentBlock">
                     {item.html}
                 </div>
-                <div style={{padding: '50px', paddingTop:'0px'}}>
+                <div className="contentBlockHeading">
                     {forward_to}
                 </div>
             </div>

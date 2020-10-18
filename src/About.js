@@ -9,9 +9,8 @@ import { specialPosts } from './content/_content';
 class About extends React.Component {
 
     render() {
-
         return (
-            <div style={{color: '#333333'}}>
+            <div>
                 <Post item={specialPosts.about} />
             </div>
         )

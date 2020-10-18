@@ -63,9 +63,9 @@ function PostLink(props) {
         <Card onClick={() => {goToURL(link)}} elevation={0} style={{width: '100%'}}>
             <CardActionArea>
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2"><u>{item.title}</u></Typography>
-                    <Typography gutterBottom variant="h7" component="h7"><i>{parsed_date}</i></Typography>
-                    <Typography variant="body2" color="textSecondary" component="p" style={{paddingTop: '10px'}}>{item.summary}</Typography>
+                    <h3><u>{item.title}</u></h3>
+                    <p><i>{parsed_date}</i></p>
+                    <p>{item.summary}</p>
                 </CardContent>
             </CardActionArea>
         </Card>

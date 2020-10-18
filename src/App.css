@@ -1,42 +1,221 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Fonts */
+/* ----- */
+
+h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 250%;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 150%;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+    font-family: 'Lora', serif;
+    font-size: 120%;
+    line-height: 1.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h5 {
+    font-family: 'Lora', serif;
+    font-size: 120%;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-.no-link-effects:hover {
-  text-decoration: none;
+
+/* Links */
+/* ----- */
+
+a:link {
+  color: #333333;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #333333;
+  text-decoration: underline;
+}
+
+
+/* Layout */
+/* ------ */
+
+.siteDiv {
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+}
+
+/* NavBar */
+/* ------ */
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.navBarItem {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 150%;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Center Piece */
+.centerPiece {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centerPiece img {
+    width: 100px;
+    padding-top: 40px;
+}
+
+.centerPiece h1 {
+    color: #333333;
+    text-align: center;
+    font-size: 400%;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.centerPiece p {
+    color: #333333;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 300;
+    padding-top: 00px;
+}
+
+/* Jumbotron */
+.jumboBig{
+  transition: height 0.5s ease;
+  height: 350px;
+}
+
+.jumboSmall{
+  transition: height 0.5s ease;
+  height: 100px;
+}
+
+.nameVisible {
+    transition: opacity 0.25s ease;
+    opacity: 1.0;
+}
+
+.nameHidden {
+    transition: opacity 0.25s ease;
+    opacity: 0.0;
+    height: 0px
+}
+
+/* Content Formatting */
+/* ------------------ */
+
+.contentBlockTitle {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.contentBlockHeading {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contentBlock {
+     padding-left: 50px;
+     padding-right: 50px;
+}
+
+
+/* Make these changes when mobile */
+@media screen and (max-width: 900px) {
+
+    /* Fonts */
+    /* ----- */
+
+    h1 {
+        font-size: 150%;
+    }
+
+    h3 {
+        font-size: 120%;
+    }
+
+    p {
+        font-size: 90%;
+    }
+
+    h5 {
+        font-size: 90%;
+    }
+
+    /* NavBar */
+    /* ------ */
+
+    .navBar {
+        padding-top: 10px;
+    }
+
+    .navBarItem {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 110%;
+        font-weight: 500;
+        font-family: 'Manrope', sans-serif;
+    }
+
+    /* Center Piece */
+    .centerPiece img {
+        width: 60px;
+        padding-top: 50px;
+    }
+
+    .centerPiece h1 {
+        font-size: 200%;
+    }
+
+    .centerPiece p {
+        font-size: 100%;
+    }
+
+    /* Jumbotron */
+    .jumboBig{
+      height: 250px;
+    }
+
+    .jumboSmall{
+      height: 50px;
+    }
+
 }

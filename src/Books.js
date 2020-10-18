@@ -2,6 +2,7 @@ import React from "react";
 import Paper from '@material-ui/core/Paper';
 import CheckIcon from '@material-ui/icons/Check';
 import ClearIcon from '@material-ui/icons/Clear';
+import "./App.css"
 
 class Book extends  React.Component {
 
@@ -11,9 +12,9 @@ class Book extends  React.Component {
             <Paper style={{padding: '20px'}} elevation={1}>
                 <div style={{display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center'}}>
                     <div id={title}>
-                        <h4>{title}</h4>
-                        <h5 style={{paddingBottom: '5px'}}>{author}</h5>
-                        <p style={{fontSize: '110%', width: '96%', lineHeight: '18pt'}}>{summary}</p>
+                        <h3>{title}</h3>
+                        <p><i>{author}</i></p>
+                        <p>{summary}</p>
                         <div>
                             {(again)
                                 ?<div style={{display: 'flex'}}><CheckIcon/><p style={{fontSize: '100%', paddingLeft: '10px'}}>Will read again.</p></div>
@@ -22,7 +23,7 @@ class Book extends  React.Component {
                         </div>
                     </div>
                     <div>
-                        <img src={url} style={{maxHeight: '150px'}}/>
+                        <img src={url} style={{maxHeight: '150px', paddingLeft: '20px'}}/>
                     </div>
                 </div>
             </Paper>
@@ -277,14 +278,14 @@ class Books extends React.Component {
     render() {
 
         return (
-            <div style={{color: '#333333'}}>
-                <div className='manrope' style={{padding: '50px'}}>
+            <div>
+                <div className="contentBlockTitle">
                     <h1>Reading List.</h1>
                 </div>
-                <div className='manrope' style={{paddingLeft: '50px', paddingRight: '50px'}}>
+                <div className="contentBlock">
                     <p>Notes to myself on books I've read (since I started keeping track).</p>
                 </div>
-                <div className='manrope' style={{padding: '50px'}}>
+                <div className="contentBlockHeading">
                     <h3>2020</h3>
                 </div>
                 {books.year_2020.map(function (item, index) {
@@ -294,7 +295,7 @@ class Books extends React.Component {
                         </div>
                     )
                 })}
-                <div className='manrope' style={{padding: '50px'}}>
+                <div className="contentBlockHeading">
                     <h3>2019</h3>
                 </div>
                 {books.year_2019.map(function (item, index) {

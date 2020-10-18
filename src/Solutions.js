@@ -4,8 +4,10 @@ import React from "react";
 import Paper from "@material-ui/core/Paper";
 import CheckIcon from "@material-ui/icons/Check";
 import ClearIcon from "@material-ui/icons/Clear";
+import "./App.css"
+import PostLink from "./PostLink";
 
-class Book extends  React.Component {
+class Solution extends  React.Component {
 
     render() {
         let { problem, solution, title } = this.props;
@@ -13,14 +15,16 @@ class Book extends  React.Component {
             <Paper style={{padding: '20px'}} elevation={1}>
                 <div style={{display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center'}}>
                     <div>
-                        <h4>{title}</h4>
-                        <p style={{fontSize: '110%', width: '96%', lineHeight: '18pt'}}>{problem}</p>
-                        <p style={{fontSize: '110%', width: '96%', lineHeight: '18pt'}}>{solution}</p>
+                        <h3>{title}</h3>
+                        <p>{problem}</p>
+                        <p>{solution}</p>
                     </div>
                 </div>
             </Paper>
         )
     }
+
+
 
 }
 
@@ -52,22 +56,19 @@ class Solutions extends React.Component {
         return (
             <div style={{color: '#333333'}}>
 
-                <div className='manrope' style={{padding: '50px'}}>
+                <div className="contentBlockTitle">
                     <h1>Solutions.</h1>
                 </div>
-                <div className='manrope' style={{paddingLeft: '50px', paddingRight: '50px'}}>
+                <div className="contentBlock">
                     <p>If I come across a problem more than twice, that's the signal to implement or record the solution somewhere. This page is that somewhere. I built it for me, but hopefully it solves a problem you have as well.</p>
                 </div>
-                {solutions.map(function (item, index) {
-                    return (
-                        <div style={{paddingLeft: '50px', paddingRight: '50px', paddingTop: '10px', paddingBottom: '10px'}}>
-                            <Book title={item.title} problem={item.problem} solution={item.solution}/>
+                <div style={{display: 'flex', flexDirection: 'column'}}>
+                    {solutions.map((item) =>
+                        <div className="contentBlockHeading">
+                            <Solution title={item.title} problem={item.problem} solution={item.solution}/>
                         </div>
-                    )
-                })}
-
-
-
+                    )}
+                </div>
             </div>
         )
     }

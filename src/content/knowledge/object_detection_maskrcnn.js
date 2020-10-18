@@ -83,11 +83,8 @@ const object_detection_mask_rcnn_content =
             If the numbers do not divide exactly, the we simply <i>truncate</i>, so a proposal of width 45 would become 4.5, which
             would be truncated to 4, that way we never have proposal coordinates split across two cells. Here's what we've got so far.
         </p>
-        <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
-            <div style={{width: '25%'}}>
-                <CaptionedImage image={mask_part_1} caption="Illustration of the last feature map."/>
-            </div>
-        </div>
+        <CaptionedImage image={mask_part_1} caption="Illustration of the last feature map."/>
+
         <p style={{textIndent: '30px', textAlign: 'left'}}>
             Next, our ROI Pooling layer squashes (or stretches) every projected region into a fixed width and height, let's
             say 3x3, note that this is specified ahead of time as a hyperparameter you get to choose. To avoid confusion, I'll refer
@@ -100,12 +97,8 @@ const object_detection_mask_rcnn_content =
             we do the same truncation operation that we did before. Here's what we've got now, note how we've cropped the warped region out
             of the original feature map.
         </p>
-        <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
-            <div style={{width: '50%'}}>
-                <CaptionedImage image={mask_part_2} caption="One projected region has been warped into a 3x3x512 tensor. This happens for
+        <CaptionedImage image={mask_part_2} caption="One projected region has been warped into a 3x3x512 tensor. This happens for
                 every N projected region, so we end up with N 3D tensors."/>
-            </div>
-        </div>
         <p style={{textIndent: '30px', textAlign: 'left'}}>
             Now we do two different things in parallel, the 3D warped region is flattened into a
             fixed length vector (in the image below, the 4608 comes from 3 x 3 x 512) and goes down into the box and class prediction branches.
@@ -120,12 +113,8 @@ const object_detection_mask_rcnn_content =
             the same size. Some might do several convolutions in a row with differing number of channels in the intermediate layers,
             but all will end up with <code>K</code> channels in the output. Here's what we've got now.
         </p>
-        <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
-            <div style={{width: '50%'}}>
-                <CaptionedImage image={mask_part_3} caption="The warped region is passed through a convolution layer to produce a 3D
+        <CaptionedImage image={mask_part_3} caption="The warped region is passed through a convolution layer to produce a 3D
                 tensor of size 3 x 3 x K."/>
-            </div>
-        </div>
         <p style={{textIndent: '30px', textAlign: 'left'}}>
             How do we convert a single channel of that output tensor into an actual mask? The final tensor is passed
             through a sigmoid layer, so every output is now between 0 and 1, and then we threshold at 0.5. To get the mask
@@ -139,13 +128,9 @@ const object_detection_mask_rcnn_content =
             the mask over the region proposal in the original image. These are all technical details that can be skipped without
             loss of understanding of the main idea behind Mask R-CNN, but hopefully you get what I'm saying.
         </p>
-        <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
-            <div style={{width: '50%'}}>
-                <CaptionedImage image={mask_part_4} caption="To get the final mask, we select the ith channel. The tensor is
+        <CaptionedImage image={mask_part_4} caption="To get the final mask, we select the ith channel. The tensor is
                 first passed through a sigmoid layer and then thresholded. We dewarp the mask back through the quantisation layers
                 to get the mask on the image."/>
-            </div>
-        </div>
         <h3>The ROI Align Layer</h3>
         <p style={{textIndent: '30px', textAlign: 'left'}}>
             The process as I described it above will not work. Or rather, it will work, but not very well. That's because
@@ -166,11 +151,7 @@ const object_detection_mask_rcnn_content =
             region proposal doesn't get quantised to 4 cells in the feature map, it gets projected to 4.5 cells.
             How this works is easier to explain in a diagram.
         </p>
-        <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
-            <div style={{width: '50%'}}>
-                <CaptionedImage image={roi_align} caption="ROI Align, see my explanation below."/>
-            </div>
-        </div>
+        <CaptionedImage image={roi_align} caption="ROI Align, see my explanation below."/>
          <p style={{textIndent: '30px', textAlign: 'left'}}>
             The region proposal is the dotted line around the stick figure, the quantised case is in black, see how
              it lines up with the grid cells on the feature map because it is quantised to make it fit. The black 2x2 output is the quantised region, note how each

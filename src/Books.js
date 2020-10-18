@@ -10,7 +10,7 @@ class Book extends  React.Component {
         let { title, author, summary, url, again } = this.props;
         return (
             <Paper style={{padding: '20px'}} elevation={1}>
-                <div style={{display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center'}}>
+                <div className="bookItemLayout">
                     <div id={title}>
                         <h3>{title}</h3>
                         <p><i>{author}</i></p>
@@ -22,7 +22,7 @@ class Book extends  React.Component {
                             }
                         </div>
                     </div>
-                    <div>
+                    <div className="bookItemImage">
                         <img src={url} style={{maxHeight: '150px', paddingLeft: '20px'}}/>
                     </div>
                 </div>

@@ -158,6 +158,21 @@ a:visited {
 }
 
 
+/* Misc */
+/* ---- */
+
+.bookItemLayout {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bookItemImage {
+    display: block;
+}
+
+
 /* Make these changes when mobile */
 @media screen and (max-width: 900px) {
 
@@ -216,6 +231,13 @@ a:visited {
 
     .jumboSmall{
       height: 50px;
+    }
+
+    /* Misc */
+    /* ---- */
+
+    .bookItemImage {
+        display: none;
     }
 
 }

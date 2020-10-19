@@ -290,7 +290,7 @@ class Books extends React.Component {
                 </div>
                 {books.year_2020.map(function (item, index) {
                     return (
-                        <div style={{paddingLeft: '50px', paddingRight: '50px', paddingTop: '10px', paddingBottom: '10px'}}>
+                        <div className="contentBlock" style={{paddingBottom: '20px'}}>
                             <Book title={item.title} author={item.author} summary={item.summary} url={item.url} again={item.again}/>
                         </div>
                     )
@@ -300,7 +300,7 @@ class Books extends React.Component {
                 </div>
                 {books.year_2019.map(function (item, index) {
                     return (
-                        <div style={{paddingLeft: '50px', paddingRight: '50px', paddingTop: '10px', paddingBottom: '10px'}}>
+                        <div className="contentBlock">
                             <Book title={item.title} author={item.author} summary={item.summary} url={item.url} again={item.again}/>
                         </div>
                     )
